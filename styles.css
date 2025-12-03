@@ -1,0 +1,94 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.set-titles-font {
+    font-family: "Homenaje", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    font-style: normal;
+    text-align: center;
+    color:#0d78f3
+}
+
+.set-subtitles-font {
+    font-family: "Homenaje", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    font-style: normal;
+    text-align: center;
+    color:#5996dd
+}
+
+.set-text-font {
+    font-family: "Homenaje", sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+    color:#000000
+}
+
+header {
+  padding: 40px 0;
+}
+
+main {
+    margin-top: 140px; 
+}
+
+.main-header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 999;
+    padding-bottom: 10px;
+}
+
+.main {
+    margin: 0;
+    padding-top: 20px; 
+}
+
+ul {
+    font-family: "Homenaje", sans-serif;
+    list-style-type: none;
+    top:100px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #66acea;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #0d78f3;
+}
+
+.articles-style {
+    width: 100%;
+}
+
+.new_hybrid {
+    width:100%;
+    margin-top: 100px;
+    text-align: center;
+}
