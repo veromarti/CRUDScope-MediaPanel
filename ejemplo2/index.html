@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUDScope – Panel de Figuras FINA</title>
+
+    <!-- Requisito obligatorio -->
+    <base href="https://ejemplo.com/">
+
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; }
+        header, nav, footer { background: #007ACC; color: white; padding: 15px; }
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { display: inline-block; margin-right: 15px; }
+        main { padding: 20px; }
+        table, td, th { border: 1px solid #333; border-collapse: collapse; }
+        table { width: 100%; margin-top: 20px; }
+        th, td { padding: 8px; text-align: center; }
+        footer { text-align: center; margin-top: 40px; }
+        aside { background: #e8f4ff; padding: 10px; margin-top: 20px; }
+        img { width: 100px; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Panel de Figuras 🔱</h1>
+    <p>Sistema CRUD de figuras de natación artística basadas en <abbr title="Create, Read, Update, Delete">CRUD</abbr></p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#crear">Crear figura</a></li>
+        <li><a href="#listado">Ver figuras</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+        <li><a href="#about">Acerca de</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <!-- CREAR -->
+    <section id="crear">
+        <h2>Crear nueva figura</h2>
+        <form>
+            <label>Nombre de la figura: <input type="text" required></label><br><br>
+
+            <label>Categoría:
+                <select>
+                    <option>12U</option>
+                    <option>13-15</option>
+                    <option>Junior</option>
+                    <option>Senior</option>
+                </select>
+            </label><br><br>
+
+            <label>Grado de dificultad:
+                <input type="number" step="0.1" min="0">
+            </label><br><br>
+
+            <label>Fecha creación:
+                <time datetime="2025-12-02">Hoy</time>
+            </label><br><br>
+
+            <label>Descripción:</label><br>
+            <textarea rows="3"></textarea><br><br>
+
+            <button type="submit">Guardar figura</button>
+        </form>
+    </section>
+
+    <!-- LISTADO -->
+    <section id="listado">
+        <h2>Listado de Figuras del Evento</h2>
+
+        <table>
+            <tr>
+                <th>Figura</th>
+                <th>Categoría</th>
+                <th>Dificultad</th>
+                <th>Acciones</th>
+            </tr>
+            <tr>
+                <td>Barracuda</td>
+                <td>Junior</td>
+                <td><strong>1.8</strong></td>
+                <td>
+                    <button>Editar</button>
+                    <a href="#">Eliminar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Flamingo</td>
+                <td>13-15</td>
+                <td><u>2.0</u></td>
+                <td>
+                    <button>Editar</button>
+                    <a href="#">Eliminar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Albatros</td>
+                <td>Senior</td>
+                <td><mark>2.5</mark></td>
+                <td>
+                    <button>Editar</button>
+                    <a href="#">Eliminar</a>
+                </td>
+            </tr>
+        </table>
+
+        <p>Estas figuras cuentan con valoración <em>FINA</em> oficial.</p>
+    </section>
+
+    <!-- MULTIMEDIA -->
+    <section id="multimedia">
+        <h2>Multimedia de Figuras</h2>
+        
+        <h3>Ejemplo en Imagen</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Synchro_Flamingo.svg/240px-Synchro_Flamingo.svg.png" 
+             alt="Figura Flamingo">
+
+        <h3>Ejemplo en Video</h3>
+        <video controls width="300">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+
+        <h3>Audio de ejemplo</h3>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+            Tu navegador no soporta audio.
+        </audio>
+    </section>
+
+    <!-- ASIDE -->
+    <aside>
+        <p><strong>Tip:</strong> Categorías <span>Junior</span> y <span>Senior</span> tienen mayor dificultad mínima.</p>
+    </aside>
+
+</main>
+
+<footer id="about">
+    <p>Sistema creado por <b>Verónica</b> – 2025</p>
+    <address>
+        Contacto: <a href="mailto:veronica@example.com">Email</a>
+    </address>
+</footer>
+
+</body>
+</html>

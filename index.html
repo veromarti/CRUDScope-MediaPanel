@@ -12,7 +12,7 @@
         rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css" />
 
-    <link rel="icon" href="media/images/synchro_icon.png" type="image/png">
+    <link rel="icon" type="image/png" href="media/images/synchro.png">
 
     <base href="/" target="_blank">
 
@@ -22,10 +22,12 @@
         <div class="main-header">
 
             <h1 class="set-titles-font">Mermaid Code</h1>
+            <p class="set-text-font"><abbr title="Create, Read, Update, Delete">CRUD</abbr> system for Artistic Swimming
+                 hybrids creation based in <abbr title="Hyper Text Marking Language">HTML</abbr></p>
             <nav>
                 <ul>
-                    <li><a href="#New Hybrid" class="active">New Hybrid</a></li>
-                    <li><a href="#My Hybrids">My Hybrids</a></li>
+                    <li><a href="#new_hybrid">New Hybrid</a></li>
+                    <li><a href="#my_hybrids">My Hybrids</a></li>
                     <li><a href="#Update Hybrid">Update Hybrid</a></li>
                     <li><a href="#Remove Hybrid">Remove Hybrid</a></li>
                     <li style="float:right"><a href="#about">About</a></li>
@@ -37,13 +39,19 @@
 
     
 
-    <main class="new_hybrid">
-        <section id = 'New Hybrid' class="articles-style">
-            <article title="Main">
-                    <h2 class="set-subtitles-font">New Hybrid</h2>
-                    <p class="set-text-font">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, eligendi magnam corporis perferendis minima labore error consequuntur eius nulla incidunt maiores repudiandae cupiditate architecto quis libero quos optio, beatae nisi!
-                    </p>
+    <main>
+        <section id = 'new_hybrid' class="new_hybrid">
+            <article>
+                <h2 class="set-subtitles-font">New Hybrid</h2>
+                <p class="set-text-font">
+                    <a href="https://resources.fina.org/fina/document/2025/10/24/cbafa24c-437a-4242-87e7-0384651e3564/Ap
+                            pendix-6-Hybrid-Catalogue-Difficulty-Table-UPDATED-24.10-.pdf" 
+                        target="_blank" 
+                        rel="noreferer">Hybrids Catalogue</a>  
+                    
+                    A declared free hybrid is defined as the combination of five (5) or more movements performed with the 
+                    lower limbs with intentional apnea (head down under hips level).
+                </p>
                     <form action="#" method="post" enctype="multipart/form-data">
                     <h2>Crear Rutina</h2>
 
@@ -74,6 +82,30 @@
 
                     <button type="submit">Guardar Rutina</button>
                     </form>
+
+        </article>
+        </section>
+
+        <section id = 'my_hybrids' class="new_hybrid">
+            <article>
+                <h2 class="set-subtitles-font">My Hybrids</h2>
+                <table>
+                    <tr>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                    </tr>
+                </table>
             <br>
             <br>
             <br>
