@@ -41,6 +41,8 @@ header {
 
 main {
     margin-top: 140px; 
+    align-items: center 
+
 }
 
 .main-header{
@@ -51,9 +53,6 @@ main {
     background-color: rgb(110, 173, 240);
     z-index: 999;
     padding-bottom: 10px;
-}
-
-.main {
     margin: 0;
     padding-top: 20px; 
 }
@@ -74,6 +73,7 @@ ul li {
 
 ul li a {
     display: block;
+    font-size: 20px;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -89,18 +89,44 @@ ul li a:hover {
 }
 
 .new_hybrid {
-    width:100%;
-    margin-top: 100px;
+    width:80%;
+    max-width: 1200px;       
+    margin: 100px auto 0;    
     text-align: center;
-}
-
-.column {
-  float: left;
-  width: 50%;
+    padding-left: 12px;    
+    padding-right: 12px;
 }
 
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
+
+.column {
+    float: left;
+    width: 45%;  
+    margin: 0 2.5%;
+    vertical-align: top; 
+}
+
+.gif{
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        float: none;        
+        width: 100%;        
+        margin: 12px 0;     
+    }
+
+    .new_hybrid {
+        width: 90%;   
+        margin-top: 60px;      
+    }
+}
+
