@@ -12,7 +12,7 @@
         rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css" />
 
-    <link rel="icon" type="image/png" href="media/images/synchro.png">
+    <link rel="icon" type="image/png" href="./media/images/synchro.png">
 
     <base href="/" target="_blank">
 
@@ -22,8 +22,8 @@
         <div class="main-header">
 
             <h1 class="set-titles-font">Mermaid Code</h1>
-            <p class="set-text-font"><abbr title="Create, Read, Update, Delete">CRUD</abbr> system for Artistic Swimming
-                 hybrids creation based in <abbr title="Hyper Text Marking Language">HTML</abbr></p>
+            <p class="set-text-font"><abbr title="Create, Read, Update, Delete">CRUD</abbr> system based in <abbr 
+                title="Hyper Text Marking Language">HTML</abbr> for Artistic Swimming hybrids creation </p>
             <nav>
                 <ul>
                     <li><a href="#new_hybrid">New Hybrid</a></li>
@@ -41,19 +41,27 @@
 
     <main>
         <section id = 'new_hybrid' class="new_hybrid">
-            <article>
-                <h2 class="set-subtitles-font">New Hybrid</h2>
-                <p class="set-text-font">
-                    <a href="https://resources.fina.org/fina/document/2025/10/24/cbafa24c-437a-4242-87e7-0384651e3564/Ap
-                            pendix-6-Hybrid-Catalogue-Difficulty-Table-UPDATED-24.10-.pdf" 
-                        target="_blank" 
-                        rel="noreferer">Hybrids Catalogue</a>  
-                    
-                    A declared free hybrid is defined as the combination of five (5) or more movements performed with the 
-                    lower limbs with intentional apnea (head down under hips level).
-                </p>
+            <div class="row">
+                <div class="column">
+                    <p class="set-text-font">  
+                        A declared free hybrid is defined as the combination of five (5) or more movements performed with the 
+                        lower limbs with intentional apnea (head down under hips level). For more information, refer to 
+                        <a href="https://resources.fina.org/fina/document/2025/10/24/cbafa24c-437a-4242-87e7-0384651e3564/Ap
+                                pendix-6-Hybrid-Catalogue-Difficulty-Table-UPDATED-24.10-.pdf" 
+                            target="_blank" 
+                            rel="noreferer">Hybrids Catalogue</a>
+                    </p>
+                </div>
+
+                <div class="column">
+                    <img
+                    src="media/hybrid.gif"
+                    style="width: 100%"
+                    alt="Hybrid gif for reference">
+                </div>
+            </div>
                     <form action="#" method="post" enctype="multipart/form-data">
-                    <h2>Crear Rutina</h2>
+                    <h2 class="set-subtitles-font">New Hybrid</h2>
 
                     <label>Nombre de Rutina:</label>
                     <input type="text" name="nombre_rutina" required>
@@ -83,7 +91,7 @@
                     <button type="submit">Guardar Rutina</button>
                     </form>
 
-        </article>
+        
         </section>
 
         <section id = 'my_hybrids' class="new_hybrid">
