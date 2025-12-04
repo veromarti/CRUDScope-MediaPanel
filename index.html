@@ -13,14 +13,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD
         @20..48,100..700,0..1,-50..200&icon_names=add_circle" />
 
-    <link rel="stylesheet" 
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     <link rel="stylesheet" href="styles.css" />
 
     <link rel="icon" type="image/png" href="media/images/synchro.png">
 
-    <base href="#" target="">
+    <base href="https://veromarti.github.io/CRUDScope-MediaPanel/" target="">
 
 </head>
 <body>
@@ -33,11 +31,14 @@
             <nav>
                 <ul>
                     <li><a 
-                        href="#add_hybrid">New Hybrid 
-                    </a></li>
-                    <li><a href="#my_hybrids">My Hybrids</a></li>
-                    <li><a href="#Update Hybrid">Update Hybrid</a></li>
-                    <li><a href="#Remove Hybrid">Remove Hybrid</a></li>
+                        href="#add_hybrid">New Hybrid</a>
+                    </li>
+                    <li><a 
+                        href="#my_hybrids">My Hybrids</a>
+                    </li>
+                    <li><a 
+                        href="#multimedia">Multimedia</a>
+                    </li>
                     <li style="float:right"><a href="#about">About</a></li>
                 </ul>
 
@@ -97,8 +98,12 @@
                 <input type="file" name="music">
 
                 <button type="submit">Save Routine</button>
-                </form>
+            </form>
 
+            <aside class="set-text-font">
+                <h3>Tips</h3>
+                <p>Keep the <span>hybrid declaration</span> as real as possible.</p>
+            </aside>
         
         </section>
 
@@ -111,9 +116,8 @@
                         <tr>
                             <th><h3>Routine</h3></th>
                             <th><h3>Category</h3></th>
-                            <th><h3>Hybrid</h3></th>
-                            <th><h3>Duration</h3></th>
                             <th><h3>Music</h3></th>
+                            <th><h3>Option</h3></th>
                         </tr>
                     </thead>
 
@@ -121,64 +125,79 @@
                         <tr>
                             <td>Duet</td>
                             <td>Junior</td>
-                            <td>A1a RD1 S1 RC1 RO2</td>
-                            <td>01:48</td>
                             <td><audio controls>
                                 <source src=media/audio/rain.mp3 type="audio/mpeg">
                                 Your browser does not support the audio element.
                                 </audio>
                             </td>
+                            <td><a href="#">Update</a> | <a href="#">Remove</a></td>
                         
                         </tr>
 
                         <tr>
                             <td>Solo</td>
                             <td>12U</td>
-                            <td>A3b RD2 RC1 RO2 S3</td>
-                            <td>01:49</td>
                             <td><audio controls>
                                 <source src="media/audio/birds.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
                                 </audio>
                             </td>
+                            <td><a href="#">Update</a> | <a href="#">Remove</a></td>
                             
                         </tr>
 
                         <tr>
                             <td>Acrobatic</td>
                             <td>Senior</td>
-                            <td>A8 RD2 S3 RC1 RO2 SC2</td>
-                            <td>00:55</td>
                             <td><audio controls>
                                 <source src="media/audio/horror.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
                                 </audio>
                             </td>
+                            <td><a href="#">Update</a> | <a href="#">Remove</a></td>
                         </tr>
                     </tbody>
                 </table>
             </article>
         </section>
 
-        <section class="multimedia">
+        <section id="multimedia" class="multi">
+            <h2 class="set-subtitles-font">Multimedia</h2>
 
+            <div class="row">
+                <div class="column">
+                    <iframe style="border-radius: 10px;" 
+                        src="https://www.youtube.com/embed/4jouafa6gCM?si=gS9Qk9jm1SXLvcKq" 
+                        title="YouTube video player" f
+                        rameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="column">
+                    <iframe style="border-radius: 10px;" 
+                        src="https://www.pexels.com/video/women-doing-synchronized-swimming-8686161/" 
+                        title="Video by Kindel Media" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
 
         </section>
         
-        <article>
+        <article id="about">
+            
+            <h2 class="set-subtitles-font">About Mermaid Code</h2>
+            <p class="set-text-font">This page was created for learning porposes, to practice <u>semantic</u> tags and multimedia.</p>
 
         </article>
 
-        <aside>
-
-        </aside>
-
-
-
     </main>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
 
 <footer class="site-footer">
 
@@ -188,6 +207,7 @@
             <strong>Mermaid Code</strong><br>
             Calle 16 #55-129<br>
             Medellín, Colombia<br>
+            Created by Verónica Martínez Cadavid <br>
             <a href="mailto:mermaid.code@example.com">mermaid.code@example.com</a>
         </address>
 

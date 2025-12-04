@@ -255,6 +255,21 @@ ul li a:hover {
     font-weight: 700;
 }
 
+.multi{
+    font-family: 'Homenaje', sans-serif;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+.column iframe {
+    width: 100%;
+    height:350px
+}
+
 .site-footer {
     background: #0d78f3;
     font-family: 'Homenaje', sans-serif;
