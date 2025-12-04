@@ -111,7 +111,7 @@ Below is a categorized list of the main tags used in the project, with short des
 
 ## Semantic vs. Non-Semantic Tags
 
-### ✔ **Semantic Tags**
+### **Semantic Tags**
 Tags whose names describe their purpose and meaning.
 
 **Examples:**  
@@ -182,7 +182,7 @@ Examples:
 
 ---
 
-## ✔ Author
+## Author
 
 **Created by:** Verónica Martínez Cadavid  
 Project: *Mermaid Code – CRUDScope MediaPanel*  
